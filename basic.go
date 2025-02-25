@@ -8,7 +8,10 @@ func main() {
     fmt.Println("Hello World!")
 
     //data types function
-    data_types()
+    // data_types()
+
+    //go outputs
+    outputs()
 }
 
 func data_types() {
@@ -58,6 +61,30 @@ func data_types() {
 
     const PI float32 = 3.14
     fmt.Println("const PI", PI)
+}
+
+func outputs() {
+    var a, b string = "hello", "world"
+
+
+    fmt.Print(a)
+    fmt.Print(b)
+
+    fmt.Print("\n")
+
+    //break line
+    fmt.Print(a, "\n", b, "\n")
+
+    //blank space
+    fmt.Print(a, " ", b, "\n")
+
+    //printf function
+    fmt.Printf("a has a value: %v and type: %T\n", a, a)
+    fmt.Printf("b has a value: %v and type %T\n", b, b)
+
+    //print the value in go-syntax format
+    fmt.Printf("a has a value: %#v and type: %T\n", a, a)
+    
 }
 
 
