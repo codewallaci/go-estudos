@@ -55,6 +55,9 @@ func data_types() {
     )
 
     fmt.Println("multiple vars in block", h, i, j)
+
+    const PI float32 = 3.14
+    fmt.Println("const PI", PI)
 }
 
 
