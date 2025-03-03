@@ -11,7 +11,10 @@ func main() {
     // data_types()
 
     //go outputs
-    outputs()
+    // outputs()
+
+    //array
+    array()
 }
 
 func data_types() {
@@ -87,4 +90,48 @@ func outputs() {
     
 }
 
+func array () {
+    
 
+    //array with length 2
+    var array_1 = [2]string{"ford", "fiat"}
+    fmt.Println(array_1)
+
+    //array witn inferred length
+    var array_2 = [...]string{"ford", "fiat", "bmw"}
+    fmt.Println(array_2)
+
+    //sign array
+    array_3 := [4]string{"ford", "fiat", "bmw", "chevrolet"}
+
+    //acess array element
+    fmt.Println(array_3[1])
+
+    //change array element
+    array_3[1] = "toyota"
+    fmt.Println(array_3[1])
+
+    //array len
+    fmt.Println(len(array_3))
+
+
+    //arra Initialization
+
+    //not initialized
+    arr1 := [5]int{}
+    
+    //partially initialized
+    arr2 := [5]int{1, 2}
+
+    //fully initialized
+    arr3 := [5]int{1, 2, 3, 4, 5}
+
+    fmt.Println("Array 1", arr1)
+    fmt.Println("Array 2", arr2)
+    fmt.Println("Array 3", arr3)
+
+    //initialize specific index
+    arr4 := [5]int{1:2, 4:10}
+    fmt.Println("Array 4", arr4)
+    
+}
